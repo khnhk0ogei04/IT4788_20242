@@ -1,0 +1,80 @@
+\documentclass[DoAn.tex]{subfiles}
+
+% Include necessary packages
+\usepackage[T2A,T5]{fontenc} % Support for Vietnamese characters
+\usepackage[utf8]{inputenc}  % UTF-8 encoding for Vietnamese text
+\usepackage{graphicx}        % For including images
+\usepackage{array}           % For better table formatting
+\usepackage{booktabs}        % For nicer table lines
+\usepackage{times}           % Use Times font (similar to the image)
+\usepackage{geometry}        % For page layout adjustments
+
+% Define page geometry
+\geometry{
+  a4paper,
+  total={160mm,240mm},
+  left=30mm,
+  top=30mm,
+}
+
+% Command for underwrite (as provided)
+\newcommand{\underwrite}[3][]{% \underwrite[<thickness>]{<numerator>}{<denominator>}
+  \genfrac{}{}{#1}{}{\textstyle #2}{\scriptstyle #3}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+
+{\Large \textbf{ĐẠI HỌC BÁCH KHOA HÀ NỘI}}\\[0.5cm]
+{\large TRƯỜNG CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG}\\[1.5cm]
+\includegraphics[width=0.65\textwidth]{Hinhve/soict.png}\\[1.5cm]
+
+{\textbf{\huge{BÁO CÁO BÀI TẬP LỚN}}}\\[0.5cm]
+{\textbf{\Large{PHÁT TRIỂN ỨNG DỤNG ĐA NỀN TẢNG}}\\[0.5cm]
+{\large \textit{MÃ HỌC PHẦN: IT4788}}\\[0.5cm]
+
+% Chapter (prevent line break with \mbox)
+{\Large \textbf{\mbox{CHƯƠNG 3: TỔNG QUAN VỀ DART VÀ FLUTTER}}}\\[1cm]
+
+% Thông tin nhóm, lớp, giảng viên (phóng to)
+{\large
+\begin{center}
+\begin{tabular}{@{} l l @{}}
+\textbf{Nhóm:} & {09} \\
+\textbf{Mã lớp học:} & {159462} \\
+\textbf{Giảng viên hướng dẫn:} & {ThS. Nguyễn Tiến Thành} \\
+\end{tabular}
+\end{center}
+}
+
+\vspace{0.5cm}
+{\large \textbf{Danh sách sinh viên thực hiện}}
+
+\vspace{0.4cm}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2} 
+\begin{tabular}{|>{\centering\arraybackslash}p{1cm}|
+                >{\centering\arraybackslash}p{7cm}|
+                >{\centering\arraybackslash}p{3cm}|}
+\hline
+\textbf{STT} & \textbf{Họ tên} & \textbf{Mã sinh viên} \\
+\hline
+1 & Nguyễn Ngọc Phúc & 20220041 \\
+\hline
+2 & Nguyễn Duy Khánh & 20225019 \\
+\hline
+3 & Nguyễn Phú Hưng & 20224862 \\
+\hline
+\end{tabular}
+\end{center}
+
+\vfill
+{\large \textbf{HÀ NỘI – 2025}}
+}\end{center}
+\end{titlepage}
+
+\end{document}
