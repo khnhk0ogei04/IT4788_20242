@@ -39,7 +39,11 @@ tảng (Cross-Platform SDK) dành cho thiết bị di động. Nó cung cấp m�
     \item \textbf{Khả năng đa nền tảng:} Flutter có thể build ứng dụng không chỉ trên thiết bị di động mà còn hỗ trợ máy tính để bàn (desktop), trình duyệt (web), và các nền tảng thử nghiệm như Google Fuchsia.
 \end{itemize}
 
+<<<<<<< HEAD
 Mục đích của Flutter hướng đến việc dễ dàng triển khai ứng dụng trên bất kỳ nền tảng nào với mã nguồn duy nhất. Nó cho phép phát triển hiệu quả nhờ cấu trúc UI dựa trên các widget khai báo, khả năng tương thích đa nền tảng, máy ảo hỗ trợ \textbf{hot reload}, và đặc biệt là cách tiếp cận \textbf{lập trình phản ứng} (reactive programming). Trong Flutter, giao diện người dùng được xây dựng như một cây widget phản ánh trực tiếp trạng thái của ứng dụng. Khi trạng thái thay đổi, UI sẽ tự động được cập nhật theo cách tối ưu nhất, giúp việc phát triển trở nên nhanh chóng, chính xác và dễ bảo trì. Việc này không chỉ giúp rút ngắn thời gian phát triển mà còn nâng cao trải nghiệm người dùng.
+=======
+Mục đích của Flutter hướng đến việc dễ dàng triển khai ứng dụng trên bất kỳ nền tảng nào với mã nguồn duy nhất. Nó cho phép phát triển hiệu quả nhờ cấu trúc UI dựa trên widget khai báo, lập trình phản ứng, khả năng tương thích đa nền tảng và máy ảo hỗ trợ hot reload. 
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \textbf{Lịch sử phát triển:}  
 \begin{itemize}
@@ -80,7 +84,16 @@ Ví dụ:  Flutter hỗ trợ phát triển web với PWA (Progressive Web Apps)
 
 \end{itemize}
 
+<<<<<<< HEAD
 \textit{Flutter} sử dụng ngôn ngữ lập trình \textbf{Dart} làm nền tảng. \textbf{Dart} cung cấp cú pháp hướng đối tượng gọn gàng cùng hai chế độ biên dịch hiện đại—\emph{ahead-of-time} (AOT) và \emph{just-in-time} (JIT). Các chế độ biên dịch này vừa tối ưu hiệu năng trên thiết bị thật, vừa hỗ trợ \emph{hot reload} để phản hồi tức thời trong giai đoạn phát triển. Bên cạnh đó, cơ chế \emph{Null Safety} của Dart loại trừ lỗi giá trị \texttt{null} ngay khi biên dịch, qua đó nâng độ tin cậy của ứng dụng Flutter.
+=======
+Flutter sử dụng ngôn ngữ Dart, một ngôn ngữ lập trình hướng đối tượng do Google phát triển. Dart có cú pháp đơn giản, dễ học và hỗ trợ các tính năng hiện đại như:
+\begin{itemize}
+    \item \textbf{Biên dịch Ahead-of-Time (AOT):} Giúp cải thiện hiệu năng khi chạy ứng dụng trên thiết bị thực.
+    \item \textbf{Biên dịch Just-in-Time (JIT):} Hỗ trợ tính năng \textit{Hot Reload}(cho phép cập nhật mã và xem thay đổi tức thì mà không cần triển khai lại ứng dụng) trong quá trình phát triển
+    \item \textbf{Null Safety:} Giúp giảm thiểu lỗi liên quan đến giá trị null trong quá trình phát triển ứng dụng.
+\end{itemize}
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 Nhờ các đặc điểm trên mà Flutter có thể xây dựng được một ứng dụng chất lượng cao, hiệu năng tốt và giao diện đẹp. Flutter vượt trội so với các nền tảng khác trong việc kiểm soát giao diện, nhất quán giữa các nền tảng.
 
@@ -112,9 +125,15 @@ class MyApp extends StatelessWidget {
 \end{figure}
 
 \section{Kiến trúc của Flutter}
+<<<<<<< HEAD
 \textbf{Flutter} áp dụng mô hình \textbf{kiến trúc phân lớp} nhằm tối ưu hóa khả năng đa nền tảng, hiệu năng và tính mở rộng. Framework này được xây dựng như một hệ thống các thư viện độc lập, trong đó mỗi thư viện chỉ phụ thuộc vào lớp bên dưới. Không có lớp nào có đặc quyền truy cập vào các lớp khác, và mỗi phần của framework được thiết kế để có thể tùy chọn và thay thế. Cấu trúc phân lớp này cho phép các nhà phát triển dễ dàng thêm các tính năng mới hoặc tùy chỉnh các thành phần hiện có để đáp ứng nhu cầu cụ thể của ứng dụng. Mỗi lớp trong kiến trúc Flutter được thiết kế độc lập, giúp giảm thiểu sự phụ thuộc giữa các thành phần, từ đó nâng cao khả năng bảo trì và mở rộng của ứng dụng.
 
 Một khái niệm quan trọng của \textbf{Flutter framework} đó là các thành phần sẽ được nhóm lại theo độ phức tạp và được sắp xếp rõ ràng trong các tầng có độ phức tạp giảm dần. Một \textbf{layer} (tầng, lớp) được tạo thành bằng việc sử dụng các class tiếp theo ngay canh nó. Top của tất cả các layer là các widget đặc biệt cho Android và iOS. Layer tiếp theo là widget gốc của flutter. Tiếp nữa là \textit{Rendering layer}, đây là level thấp nhất trong việc sinh các thành phần của flutter app. Layer tiếp theo là nền tảng gốc hệ điều hành.
+=======
+\textbf{Flutter} áp dụng mô hình kiến trúc phân lớp nhằm tối ưu hóa khả năng đa nền tảng và hiệu năng, dễ dang mở rộng. Nó tồn tại dưới dạng một loạt các thư viện độc lập mà mỗi thư viện phụ thuộc vào lớp bên dưới. Không có lớp nào có đặc quyền truy cập vào các lớp bên dưới, mỗi phần framework được thiết kế để có thể tùy chọn và thay thế.
+
+Một khái niệm quan trọng của \textbf{Flutter framework} đó là các thành phần sẽ được nhóm lại theo độ phức tạp và được sắp xếp rõ ràng trong các tầng có độ phức tạp giảm dần. Một \textbf{layer} (tầng,lớp) được tạo thành bằng việc sử dụng các class tiếp theo ngay canh nó. Top của tất cả các layer là các widget đặc biệt cho Android và iOS. Layer tiếp theo là widget gốc của flutter. Tiếp nữa là \textit{Rendering layer}, đây là level thấp nhất trong việc sinh các thành phần của flutter app. Layer tiếp theo là nền tảng gốc hệ điều hành.
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 Sơ đồ kiến trúc tổng thể của Flutter được chia thành ba tầng chính: tầng \textbf{Framework} (viết bằng Dart), tầng \textbf{Engine} (viết bằng C/C++) và tầng \textbf{Embedder} (giao tiếp với hệ điều hành)
 
@@ -134,9 +153,15 @@ Sơ đồ kiến trúc tổng thể của Flutter được chia thành ba tầng
  Viết hoàn toàn bằng Dart, tầng Framework nằm phía trên cùng, cung cấp API cao cấp để xây dựng và quản lý giao diện theo mô hình phản ứng.
  \begin{figure}[H]
     \centering
+<<<<<<< HEAD
     \includegraphics[width=0.9\textwidth]{Hinhve/Chuong5/tang_framework.jpg}
     \caption{Chi tiết về lớp Framework}
     \label{fig:frameworklayer}
+=======
+    \includegraphics[width=0.9\textwidth]{Hinhve/Chuong5/flutterFramework.png}
+    \caption{Chi tiết về lớp Framework}
+    \label{fig:flutterframework}
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 \end{figure}
 \begin{itemize}
     \item \textbf{Foundation}: Cung cấp các lớp cơ bản và công cụ như error handling, assertions, sử dụng ngôn ngữ thiết kế Material (Android) hoặc Cupertino (iOS).
@@ -168,7 +193,11 @@ Tầng Engine là lõi của Flutter, chủ yếu được viết bằng C++ đ�
     \item Đóng vai trò trung gian giữa mã nguồn viết bằng Dart và thiết bị phần cứng (hoặc phần mềm bên ngoài ứng dụng).
     \item Thực thi các đoạn mã đã được thông dịch hoặc biên dịch, đồng thời cung cấp các hệ thống runtime như garbage collector và các thư viện cần thiết của ngôn ngữ.
 \end{itemize}
+<<<<<<< HEAD
 \subsection{Tầng \textit{Embedder}}
+=======
+\subsection{Tầng Embedder} 
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \begin{figure}[H]
     \centering
@@ -177,10 +206,26 @@ Tầng Engine là lõi của Flutter, chủ yếu được viết bằng C++ đ�
     \label{fig:embedderlayer}
 \end{figure}
 
+<<<<<<< HEAD
 Tầng \textit{Embedder} tạo cầu nối trực tiếp giữa \textit{Flutter Engine} và hệ điều hành mục tiêu. Cầu nối này được hiện thực khác nhau trên từng nền tảng: ở Android, mã Java hoặc Kotlin nhúng nội dung Flutter vào \textit{Activity}; ở iOS, mã Objective-C hoặc Swift kết xuất giao diện lên \textit{UIViewController}; còn trên Web, mã JavaScript gắn kết engine với \textit{HTML Canvas}.
 
 Nhờ cấu trúc chuyên biệt ấy, tầng \textit{Embedder} đồng thời khởi tạo engine và ngữ cảnh đồ họa, điều phối vòng lặp sự kiện cùng các luồng nền tảng, cũng như trung gian trao đổi dữ liệu giữa Flutter và hệ thống nhập liệu, cảm biến, camera, microphone, GPS cùng mọi dịch vụ bản địa khác.
 
+=======
+Là phần gắn kết với hệ điều hành. Mỗi nền tảng lại có embedder riêng. Ví dụ:
+\begin{itemize}
+    \item Android: dùng Java/Kotlin để hiển thị Flutter trên Activity.
+    \item iOS: dùng Objective-C/Swift để render lên UIViewController.
+    \item Web: tích hợp với HTML Canvas và JavaScript.
+\end{itemize}
+
+Embedder chịu trách nhiệm:
+    \begin{itemize}
+        \item Khởi tạo engine và môi trường vẽ.
+        \item Xử lý vòng lặp sự kiện và luồng.
+        \item Giao tiếp với hệ thống nhập liệu, camera, microphone, GPS,...
+    \end{itemize}
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \section{Ứng dụng Flutter đầu tiên}
 Với khả năng cross-platform, Flutter cho phép các nhà phát triển tạo ra các ứng dụng hiệu suất cao, sử dụng ngôn ngữ Dart, một ngôn ngữ hiện đại, dễ học và hỗ trợ lập trình hướng đối tượng cũng như lập trình chức năng. Để phát triển ứng dụng Flutter, Android Studio là một trong những công cụ lý tưởng nhất. 
@@ -384,6 +429,7 @@ Hình ảnh minh họa:
     \caption{Elevated Button trong Flutter}
     \label{fig:buttonwidget}
 \end{figure}
+<<<<<<< HEAD
 
 Trong mỗi Widget lại có các properties riêng biệt, giúp cho bản thân nó trở nên sinh động hơn khi hiển thị ra giao diện. Dưới đây là ví dụ về một số thuộc tính điển hình của widget \textbf{\texttt{ElevatedButton}}:
 
@@ -407,6 +453,8 @@ Trong mỗi Widget lại có các properties riêng biệt, giúp cho bản thâ
 \label{tab:elevated_button_properties}
 \end{table}
 
+=======
+>>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 \item \textbf{TextField:} Cho phép người dùng nhập văn bản. Được sử dụng rộng rãi trong các biểu mẫu đăng nhập, đăng ký, tìm kiếm, bình luận,...
 
 \textit{Ví dụ:}
