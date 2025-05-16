@@ -42,10 +42,6 @@
 \usepackage{subcaption}
 \usepackage{xurl}
 \usepackage{changepage}
-<<<<<<< HEAD
-=======
-
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 \usepackage[nonumberlist, nopostdot, nogroupskip, acronym]{glossaries}
 \usepackage{glossary-superragged}
 \setglossarystyle{superraggedheaderborder}
@@ -73,8 +69,8 @@
 
 \setlength{\headheight}{10pt}
 
-\def \TITLE{ĐỒ ÁN TỐT NGHIỆP}
-\def \AUTHOR{NGUYỄN VĂN ABC}
+\def \TITLE{PHÁT TRIỂN ỨNG DỤNG ĐA NỀN TẢNG}
+\def \AUTHOR{NHÓM 09}
 
 % ===================================================
 \titleformat{\chapter}[hang]{\centering\bfseries}{PHẦN \thechapter.\ }{0pt}{}[]
@@ -213,11 +209,7 @@
     [0.0cm]             % left margin
     {\bfseries\vspace{0.3cm}}                  % above code
     {{\bfseries{\scshape}
-<<<<<<< HEAD
     PHẦN \thecontentslabel.\ }}
-=======
-    CHƯƠNG \thecontentslabel.\ }}
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
     % numbered format
     {}         % unnumbered format
     {\titlerule*[0.3pc]{.}\contentspage}         % filler-page-format, e.g dots
@@ -252,6 +244,12 @@
 \renewcommand{\numberline}{Bảng~\oldnumberline}
 \listoftables}
 
+\glsaddall 
+ \renewcommand*{\glossaryname}{Danh sách thuật ngữ}
+\renewcommand*{\acronymname}{DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT}
+\renewcommand*{\entryname}{Thuật ngữ}
+\renewcommand*{\descriptionname}{Ý nghĩa}
+\printnoidxglossaries
 % ===================================================
 
 \newpage

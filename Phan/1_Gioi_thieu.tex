@@ -12,22 +12,14 @@ Trong những năm gần đây, xu hướng phát triển ứng dụng đa nền
 
 Flutter – một framework được phát triển bởi Google – cùng với ngôn ngữ Dart, đã trở thành một trong những lựa chọn hàng đầu cho phát triển ứng dụng đa nền tảng. Với khả năng hỗ trợ giao diện người dùng phong phú, hiệu suất cao và công nghệ “hot reload”, Flutter đã nhanh chóng chiếm lĩnh thị trường và được cộng đồng phát triển ứng dụng đón nhận rộng rãi.
 
-<<<<<<< HEAD
 Trong bối cảnh đó, việc nghiên cứu và nắm bắt tổng quan về Dart và Flutter không chỉ mang lại lợi ích học thuật cho sinh viên ngành công nghệ thông tin, mà còn mở ra những cơ hội nghề nghiệp tiềm năng trong thị trường lao động hiện nay. Chính vì vậy, đề tài này được thực hiện nhằm mục tiêu tìm hiểu, phân tích và hệ thống hóa kiến thức cơ bản về Dart và Flutter – từ cú pháp, lập trình hướng đối tượng trong Dart, đến kiến trúc Flutter và cách xây dựng một ứng dụng cơ bản.
-=======
-Trong bối cảnh đó, việc nghiên cứu và nắm bắt tổng quan về Dart và Flutter không chỉ mang lại lợi ích học thuật cho sinh viên ngành công nghệ thông tin, mà còn mở ra những cơ hội nghề nghiệp tiềm năng trong thị trường lao động hiện nay. Đề tài này nhằm mục tiêu tìm hiểu, phân tích và hệ thống hóa kiến thức cơ bản về Dart và Flutter – từ cú pháp, lập trình hướng đối tượng trong Dart, đến kiến trúc Flutter và cách xây dựng một ứng dụng cơ bản.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \section{Mục tiêu và phạm vi đề tài}
 \label{section:1.2}
 
 Hiện nay, nhiều công nghệ như React Native, Xamarin hay NativeScript đã được phát triển nhằm hỗ trợ xây dựng ứng dụng đa nền tảng. Tuy nhiên, các framework này vẫn tồn tại nhiều hạn chế về hiệu suất, khả năng tùy biến giao diện, và độ tương thích với hệ điều hành. Flutter nổi lên như một giải pháp khắc phục nhiều nhược điểm trên nhờ kiến trúc widget thống nhất, khả năng kết xuất (rendering) mạnh mẽ, và hiệu năng tiệm cận native.
 
-Mặc dù cộng đồng phát triển Flutter đang phát triển nhanh chóng, sinh viên vẫn gặp khó khăn trong việc tiếp cận kiến thức một cách hệ thống do thiếu tài liệu tổng hợp rõ ràng, dễ hiểu. Do đó, đề tài này hướng đến việc biên soạn và trình bày tổng quan một cách logic, trực quan và đầy đủ nhất có thể về Dart và Flutter, phục vụ mục đích học tập, giảng dạy và phát triển ứng dụng thực tế.
+Mặc dù cộng đồng phát triển Flutter đang phát triển nhanh chóng, sinh viên, đặc biệt là những lập trình viên mới vẫn gặp khó khăn trong việc tiếp cận kiến thức một cách hệ thống do thiếu tài liệu tổng hợp rõ ràng, dễ hiểu. Do đó, đề tài này hướng đến việc biên soạn và trình bày tổng quan một cách logic, trực quan và đầy đủ nhất có thể về Dart và Flutter, phục vụ mục đích học tập, giảng dạy và phát triển ứng dụng thực tế.
 
-<<<<<<< HEAD
-Phạm vi đề tài tập trung vào các nội dung cơ bản về Dart (bao gồm lịch sử của ngôn ngữ, cú pháp, lập trình hướng đối tượng, hàm, quản lý gói, ...) và Flutter (kiến trúc, widget, quản lý trạng thái, xây dựng ứng dụng cơ bản). Nhóm định hướng đề tài theo phương pháp nghiên cứu tổng hợp tài liệu kết hợp thực nghiệm cài đặt. Các nội dung sẽ được hệ thống hóa lại thành các chủ đề logic: từ giới thiệu ngôn ngữ Dart, các cú pháp cơ bản của ngôn ngữ Dart, lập trình hướng đối tượng, cấu trúc ứng dụng Flutter, đến cách tạo ứng dụng đầu tiên với quản lý trạng thái đơn giản.
-=======
-Phạm vi đề tài tập trung vào các nội dung cơ bản về Dart (bao gồm lịch sử của ngôn ngữ, cú pháp, lập trình hướng đối tượng, hàm, quản lý gói, v.v.) và Flutter (kiến trúc, widget, quản lý trạng thái, xây dựng ứng dụng cơ bản). Nhóm định hướng đề tài theo phương pháp nghiên cứu tổng hợp tài liệu kết hợp thực nghiệm cài đặt. Các nội dung sẽ được hệ thống hóa lại thành các chủ đề logic: từ giới thiệu ngôn ngữ Dart, các cú pháp cơ bản của ngôn ngữ Dart, lập trình hướng đối tượng, cấu trúc ứng dụng Flutter, đến cách tạo ứng dụng đầu tiên với quản lý trạng thái đơn giản.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
+Đề tài tập trung nghiên cứu những khía cạnh nền tảng về Dart và Flutter bằng phương pháp nghiên cứu tổng hợp tài liệu kết hợp thực nghiệm cài đặt. Đề tài sẽ mở đầu bằng việc phác họa quá trình hình thành và phát triển của Dart, bối cảnh ra đời cũng như mục tiêu thiết kế của ngôn ngữ. Tiếp theo, nội dung sẽ lần lượt đi sâu vào cú pháp cơ bản, cách Dart hiện thực hóa các nguyên lý lập trình hướng đối tượng, cấu trúc và phong cách định nghĩa hàm, đồng thời giới thiệu hệ sinh thái quản lý gói (pub). Trên nền tảng kiến thức Dart, đề tài chuyển sang Flutter, bắt đầu với kiến trúc và cơ chế render đồ họa. Tiếp đó, đề tài sẽ giới thiệu về hệ thống widget trong ứng dụng Flutter. Cuối cùng, toàn bộ khái niệm sẽ được gắn kết thông qua quy trình xây dựng một ứng dụng mẫu: khởi tạo project, thiết kế UI, xử lý logic, đóng gói và chạy thử trên nhiều nền tảng. Đề tài cung cấp cái nhìn toàn diện, tổng quan về Dart \& Flutter, qua đó trang bị lộ trình học tập rõ ràng cho người mới bắt đầu.
 

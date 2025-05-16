@@ -100,28 +100,41 @@ Trong thực tế, nếu khối lệnh chỉ có duy nhất một lệnh bên tr
 \begin{lstlisting}
     if (x > 0) print('x is positive');
 \end{lstlisting}
+
 Dart khuyến khích để mã nguồn rõ ràng và tránh các lỗi logic do nhầm lẫn phạm vi của khối lệnh.
 
 \textbf{Chú thích trong mã nguồn:} 
 
 \textbf{Chú thích} là phần nội dung trong mã nguồn mà trình biên dịch sẽ \textbf{bỏ qua không thực thi}, thường được dùng để giải thích code hoặc tạm thời vô hiệu hóa một đoạn mã. Dart hỗ trợ cả chú thích một dòng và chú thích nhiều dòng, tương tự như ngôn ngữ C/C++. 
+
 \begin{itemize}
-    \item \textbf{Chú thích trên một dòng: } Bắt đầu bằng ký tự //. Tất cả nội dung sau // trên cùng một dòng sẽ được coi là chú thích và bị bỏ qua khi chạy chương trình. Ví dụ:
-    \begin{lstlisting}
-    // This line is ignored (a comment)
-    print('Hello');  // Prints 'Hello'
-    \end{lstlisting}
-    Ở ví dụ trên, dòng đầu tiên hoàn toàn là chú thích, còn ở dòng thứ hai, phần từ // trở đi ("// In ra Hello") cũng là chú thích (giải thích cho lệnh \texttt{print})
-    \item \textbf{Chú thích trên nhiều dòng: } Bắt đầu bằng /* và kết thúc bằng */. Mọi nội dung nằm giữa cặp /* và */ sẽ được coi là chú thích. Kiểu chú thích này cho phép ghi chú trải trên nhiều dòng. Ví dụ:
-    \begin{lstlisting}
-    /* 
-    Calculate the area of a circle.
-    Radius r = 5.
-    */
-    double area = 3.14 * 5 * 5;
-    \end{lstlisting}
-    Tất cả những dòng văn bản giữa /* và */ ở trên đều là chú thích và sẽ bị bỏ qua khi chương trình chạy. \\
-    Ngoài ra, Dart cho phép lồng các chú thích nhiều dòng bên trong nhau.
+\item \textbf{Chú thích trên một dòng:} 
+    
+Bắt đầu bằng ký tự //. Tất cả nội dung sau // trên cùng một dòng sẽ được coi là chú thích và bị bỏ qua khi chạy chương trình. 
+
+\textit{Ví dụ:}
+\begin{lstlisting}
+// This line is ignored (a comment)
+print('Hello');  // Prints 'Hello'
+\end{lstlisting}
+Ở ví dụ trên, dòng đầu tiên hoàn toàn là chú thích, còn ở dòng thứ hai, phần từ // trở đi ("// Prints 'Hello'") cũng là chú thích (giải thích cho lệnh \texttt{print})
+
+ \item \textbf{Chú thích trên nhiều dòng: } 
+ 
+ Bắt đầu bằng /* và kết thúc bằng */. Mọi nội dung nằm giữa cặp /* và */ sẽ được coi là chú thích. Kiểu chú thích này cho phép ghi chú trải trên nhiều dòng. 
+ 
+\textit{Ví dụ:}
+\begin{lstlisting}
+/* 
+Calculate the area of a circle.
+Radius r = 5.
+*/
+double area = 3.14 * 5 * 5;
+\end{lstlisting}
+
+Tất cả những dòng văn bản giữa /* và */ ở trên đều là chú thích và sẽ bị bỏ qua khi chương trình chạy. 
+Ngoài ra, Dart cho phép lồng các chú thích nhiều dòng bên trong nhau.
+
 \end{itemize}
 
 Ngoài hai loại chú thích trên, Dart còn hỗ trợ \textbf{chú thích tài liệu} (documentation comments). Đây là các chú thích đặc biệt dùng để tự động sinh tài liệu API cho code, bắt đầu bằng /// (ba dấu gạch chéo) cho mỗi dòng chú thích đơn, hoặc cặp /** ... */ cho chú thích nhiều dòng dạng tài liệu. 
@@ -137,9 +150,7 @@ Các chú thích bắt đầu bằng /// như trên sẽ được các công c�
 
 \textbf{Quy tắc định danh:}
 
-Mọi định danh (tên biến, tên hàm, tên lớp, v.v.) trong Dart phải tuân thủ quy tắc đặt tên giống như nhiều ngôn ngữ lập trình khác. Cụ thể, định danh phải bắt đầu bằng một ký tự chữ cái (a–z hoặc A–Z) hoặc dấu gạch dưới {\_}, và các ký tự tiếp theo có thể là chữ cái hoặc chữ số. 
-
-Định danh không được phép bắt đầu bằng chữ số, không được chứa khoảng trắng hay các ký tự đặc biệt (ngoại trừ ký tự gạch dưới, và cả ký hiệu {\$} cũng được cho phép sử dụng trong định danh). Ngoài ra, không được dùng các từ khóa dành riêng của Dart làm tên định danh. 
+Mọi định danh (tên biến, tên hàm, tên lớp, v.v.) trong Dart phải tuân thủ quy tắc đặt tên giống như nhiều ngôn ngữ lập trình khác. Cụ thể, định danh phải bắt đầu bằng một ký tự chữ cái (a–z hoặc A–Z) hoặc dấu gạch dưới {\_}, và các ký tự tiếp theo có thể là chữ cái hoặc chữ số. Định danh không được phép bắt đầu bằng chữ số, không được chứa khoảng trắng hay các ký tự đặc biệt (ngoại trừ ký tự gạch dưới, và cả ký hiệu {\$} cũng được cho phép sử dụng trong định danh). Ngoài ra, không được dùng các từ khóa dành riêng của Dart làm tên định danh. 
 
 \textit{Ví dụ:} 
 \begin{itemize}
@@ -159,23 +170,19 @@ Việc tuân theo các quy tắc và quy ước định danh này giúp mã Dart
 
 \textbf{Mọi thứ trong Dart là đối tượng:} 
 
-Dart là ngôn ngữ hướng đối tượng thuần túy, nghĩa là \textbf{mọi thứ} có thể gán cho biến đều là đối tượng.
+Dart là ngôn ngữ hướng đối tượng thuần túy, nghĩa là \textbf{mọi thứ} có thể gán cho biến đều là đối tượng. Số nguyên, số thực, chuỗi, giá trị boolean, thậm chí cả hàm cũng đều được coi là đối tượng (thể hiện bởi các lớp như int, double, String, bool, Function, ...). Đặc biệt, ngay cả giá trị \textbf{null} cũng được biểu diễn như một đối tượng thuộc kiểu Null trong Dart (trước khi có null-safety, null là một đối tượng hợp lệ). 
 
-Số nguyên, số thực, chuỗi, giá trị boolean, thậm chí cả hàm cũng đều được coi là đối tượng (thể hiện bởi các lớp như int, double, String, bool, Function, ...). Đặc biệt, ngay cả giá trị \textbf{null} cũng được biểu diễn như một đối tượng thuộc kiểu Null trong Dart (trước khi có null-safety, null là một đối tượng hợp lệ). 
-
-Mỗi đối tượng trong Dart là một thể hiện của một lớp nào đó, và tất cả các lớp (kể cả các lớp do người dùng định nghĩa) đều ngầm định kế thừa từ một lớp cơ sở chung có tên là Object. 
-
-Object là gốc của mọi lớp trong hệ thống loại của Dart. Mọi đối tượng Dart đều chia sẻ một số phương thức cơ bản từ Object:
+Mỗi đối tượng trong Dart là một thể hiện của một lớp nào đó, và tất cả các lớp (kể cả các lớp do người dùng định nghĩa) đều ngầm định kế thừa từ một lớp cơ sở chung có tên là Object. Object là gốc của mọi lớp trong hệ thống loại của Dart. Mọi đối tượng Dart đều chia sẻ một số phương thức cơ bản từ Object:
 \begin{itemize} 
 \item \textbf{\texttt{hashCode}} – Thuộc tính trả về mã băm (hash code) của đối tượng 
 
-Thuộc tính hashCode trả về một số nguyên đại diện cho trạng thái của đối tượng, được sử dụng trong các cấu trúc dữ liệu dựa trên băm như Set và Map. Mã băm mặc định được triển khai trong lớp Object chỉ phản ánh danh tính (identity) của đối tượng. 
+Thuộc tính \texttt{hashCode} trả về một số nguyên đại diện cho trạng thái của đối tượng, được sử dụng trong các cấu trúc dữ liệu dựa trên băm như Set và Map. Mã băm mặc định được triển khai trong lớp Object chỉ phản ánh danh tính (identity) của đối tượng. 
 
-Khi ghi đè toán tử == để so sánh các đối tượng dựa trên trạng thái (tức là các thuộc tính), cần ghi đè thuộc tính hashCode để đảm bảo rằng hai đối tượng được coi là bằng nhau sẽ có cùng mã băm. 
+Khi ghi đè toán tử \texttt{==} để so sánh các đối tượng dựa trên trạng thái (tức là các thuộc tính), cần ghi đè thuộc tính \texttt{hashCode} để đảm bảo rằng hai đối tượng được coi là bằng nhau sẽ có cùng mã băm. 
 
 \item \textbf{\texttt{toString()}} – Phương thức toString() 
 
-Phương thức toString() trả về một chuỗi mô tả đối tượng, thường được sử dụng để hiển thị thông tin trong quá trình gỡ lỗi hoặc ghi log. Mặc định, \texttt{toString()} trả về chuỗi dạng Instance of 'ClassName', điều này không cung cấp nhiều thông tin hữu ích. Do đó, người ta thường ghi đè phương thức này để trả về chuỗi mô tả chi tiết hơn về đối tượng. 
+Phương thức \texttt{toString()} trả về một chuỗi mô tả đối tượng, thường được sử dụng để hiển thị thông tin trong quá trình gỡ lỗi hoặc ghi log. Mặc định, \texttt{toString()} trả về chuỗi dạng Instance of 'ClassName', điều này không cung cấp nhiều thông tin hữu ích. Do đó, người ta thường ghi đè phương thức này để trả về chuỗi mô tả chi tiết hơn về đối tượng. 
 
 \textit{Ví dụ:}
 \begin{lstlisting}
@@ -200,19 +207,13 @@ Toán tử \texttt{==} được sử dụng để so sánh hai đối tượng. 
 
 \textbf{Từ khóa public/private/protected}: 
 
-Dart không sử dụng các từ khóa như \texttt{public}, \texttt{private} hay \texttt{protected} để quy định phạm vi truy cập như trong một số ngôn ngữ hướng đối tượng khác (ví dụ Java, C++). 
-
-Mặc định, mọi lớp, thuộc tính và phương thức được khai báo trong Dart đều có phạm vi truy cập “công khai” đối với các đoạn mã khác, trừ khi được định nghĩa đặc biệt để giới hạn phạm vi. Nếu không làm gì thêm, các thành phần định nghĩa có thể được truy cập từ bất kỳ đâu. 
+Dart không sử dụng các từ khóa như \texttt{public}, \texttt{private} hay \texttt{protected} để quy định phạm vi truy cập như trong một số ngôn ngữ hướng đối tượng khác (ví dụ Java, C++). Mặc định, mọi lớp, thuộc tính và phương thức được khai báo trong Dart đều có phạm vi truy cập “công khai” đối với các đoạn mã khác, trừ khi được định nghĩa đặc biệt để giới hạn phạm vi. Nếu không làm gì thêm, các thành phần định nghĩa có thể được truy cập từ bất kỳ đâu. 
 
 Thiết kế của Dart đơn giản hóa việc đóng gói khi cho rằng thành phần nào không được đánh dấu riêng tư thì sẽ được hiểu là công khai. Điều này giúp loại bỏ sự rườm rà khi phải chỉ định \texttt{public} cho từng thành phần, đồng thời khuyến khích lập trình viên suy nghĩ về việc tổ chức mã theo thư viện (library) để kiểm soát truy cập thay vì dựa vào từ khóa.
 
 \textbf{Cách khai báo private bằng dấu {\textbf{\_}}}: 
 
-Thay vì dùng từ khóa, Dart quy định phạm vi riêng tư (private) ở cấp thư viện thông qua quy ước đặt tên: Nếu tên định danh bắt đầu bằng dấu gạch dưới \_ thì định danh đó được xem là private trong library. 
-
-Các thành viên (thuộc tính, phương thức) hoặc các khai báo (biến, hàm, lớp) có tên bắt đầu bằng \_ chỉ có thể được truy cập ở trong cùng một thư viện (thông thường là cùng một file .dart). 
-
-Ngược lại, nếu tên không bắt đầu bằng \_ thì thành phần đó là công khai và có thể được truy cập từ bất cứ đâu sau khi import. 
+Thay vì dùng từ khóa, Dart quy định phạm vi riêng tư (private) ở cấp thư viện thông qua quy ước đặt tên: Nếu tên định danh bắt đầu bằng dấu gạch dưới \_ thì định danh đó được xem là private trong library. Các thành viên (thuộc tính, phương thức) hoặc các khai báo (biến, hàm, lớp) có tên bắt đầu bằng \_ chỉ có thể được truy cập ở trong cùng một thư viện (thông thường là cùng một file .dart). Ngược lại, nếu tên không bắt đầu bằng \_ thì thành phần đó là công khai và có thể được truy cập từ bất cứ đâu sau khi import. 
 
 \textbf{Ví dụ:} Giả sử có lớp Person được định nghĩa như sau: 
 \begin{lstlisting}
@@ -291,19 +292,23 @@ Cả \texttt{final} và \texttt{const} đều tạo ra một biến chỉ đư�
 
 Dưới đây là ví dụ minh họa cách sử dụng \texttt{const} và \texttt{final}: 
 
-\begin{myverbatim}
-// Hằng const, giá trị = 120 (xác định tại biên dịch)
-const int minutes = 2 * 60;  
-// Lấy một số ngẫu nhiên (0..499)
-var soNgauNhien = Random().nextInt(500);    
-// Hằng final, giá trị xác định khi chạy
-final ketQua = soNgauNhien * 2;        
-// Không thể dùng const vì biểu thức không phải hằng    
-const saiKetQua = soNgauNhien * 2;     
-\end{myverbatim}
+\begin{lstlisting}
+// Constant, value = 120 (determined at compile time)
+const int minutes = 2 * 60;   
+
+// Get a random number (0..499)
+var randomNumber = Random().nextInt(500);    
+
+// Final constant, value determined at runtime
+final result = randomNumber * 2;        
+
+// Cannot use const because the expression is not a compile-time constant
+const wrongResult = randomNumber * 2;  
+\end{lstlisting}
 
 Giải thích: 
-Trong đoạn mã trên: \texttt{minutes} là hằng số tính sẵn (2*60 được tính toán ngay khi biên dịch, cho ra 120); ngược lại, \texttt{ketQua} được khai báo \texttt{final} và nhận giá trị là kết quả phép tính với một số ngẫu nhiên sinh ra lúc chạy chương trình. Dòng mã cuối (bị chú thích) minh họa rằng ta \textbf{không thể} dùng \texttt{const} trong trường hợp giá trị gán không phải hằng số xác định sẵn. \\[0.5em]
+Trong đoạn mã trên \texttt{minutes} là hằng số tính sẵn (2 * 60 được tính toán ngay khi biên dịch, cho ra 120); ngược lại, \texttt{result} được khai báo \texttt{final} và nhận giá trị là kết quả phép tính với một số ngẫu nhiên sinh ra lúc chạy chương trình. Ta \textbf{không thể} dùng \texttt{const} trong trường hợp giá trị gán không phải hằng số xác định sẵn(dòng lệnh cuối).
+
 \subsection{Các kiểu dữ liệu} 
 Dart hỗ trợ các kiểu dữ liệu cơ bản như \textbf{bool, int, double, String, List, Set và Map}. Mỗi kiểu dữ liệu biểu diễn một loại thông tin khác nhau, có miền giá trị và đặc điểm riêng.
 
@@ -731,10 +736,7 @@ print(b); // Output: 5
 \subsection{Toán tử điều kiện}
 Dart hỗ trợ hai toán tử điều kiện: toán tử ba ngôi (\texttt{?:}) và toán tử hợp nhất null (\texttt{??}). 
 
-Đối với toán tử ba ngôi:  
-
-\texttt{condition ? expression1 : expression2} 
-
+Toán tử ba ngôi \texttt{condition ? expression1 : expression2} 
 sẽ trả về \texttt{expression1} nếu \texttt{condition} là đúng (\texttt{true}), ngược lại trả về \texttt{expression2} 
 
 \textit{Ví dụ:} 
@@ -745,9 +747,7 @@ var maxVal = (a > b) ? a : b;
 print(maxVal); // 20    
 \end{lstlisting}
 
-Đối với toán tử hợp nhất \textbf{null}: 
-
-\texttt{expression1 ?? expression2} sẽ trả về \texttt{expression1} nếu nó không \texttt{null}, ngược lại trả về \texttt{expression2}. 
+Toán tử hợp nhất \textbf{null} \texttt{expression1 ?? expression2} sẽ trả về \texttt{expression1} nếu nó không \texttt{null}, ngược lại trả về \texttt{expression2}. 
 
 \textit{Ví dụ:}
 \begin{lstlisting}
@@ -957,11 +957,8 @@ for (int i = 1; i <= 6; i++) {
 \end{itemize}
 
 \subsection{Assert} 
-Dart cũng hỗ trợ câu lệnh \texttt{assert} dùng trong giai đoạn debug để kiểm tra tính đúng đắn của điều kiện logic. Cú pháp
+Dart cũng hỗ trợ câu lệnh \texttt{assert} dùng trong giai đoạn debug để kiểm tra tính đúng đắn của điều kiện logic. Cú pháp  \textbf{\texttt{assert(!condition, 'message')}} sẽ ngắt chương trình nếu điều kiện sai. 
 
-    \texttt{assert(!condition, 'message')} 
-    
-sẽ ngắt chương trình nếu điều kiện sai. 
 \texttt{assert} là một công cụ cực kỳ hữu ích để kiểm tra điều kiện
 logic khi đang phát triển ứng dụng (debug). Nó đảm bảo một điều kiện nào đó phải đúng tại thời điểm thực thi ngay lập tức. 
 
@@ -984,9 +981,7 @@ accountBalance > 0
 
 \subsection{Xử lí ngoại lệ với try/catch và throw, on}
 
-Dart cung cấp cơ chế xử lý ngoại lệ giống nhiều ngôn ngữ khác: \texttt{try}, \texttt{catch}, \texttt{on} và \texttt{finally}. 
-
-Khối \texttt{try-catch} dùng để bắt và xử lý lỗi bất ngờ. Có thể dùng \texttt{on Exception catch (e)} để bắt các loại ngoại lệ cụ thể. Khối \texttt{finally} luôn được thực thi sau khi \texttt{try} và \texttt{catch} (dù có lỗi hay không). 
+Dart cung cấp cơ chế xử lý ngoại lệ giống nhiều ngôn ngữ khác: \texttt{try}, \texttt{catch}, \texttt{on} và \texttt{finally}. Khối \texttt{try-catch} dùng để bắt và xử lý lỗi bất ngờ. Có thể dùng \texttt{on Exception catch (e)} để bắt các loại ngoại lệ cụ thể. Khối \texttt{finally} luôn được thực thi sau khi \texttt{try} và \texttt{catch} (dù có lỗi hay không). 
 
 \textit{Ví dụ:}
 \begin{lstlisting}
@@ -1058,11 +1053,11 @@ The finally block is always executed.
 Hàm là tập hợp các câu lệnh lấy dữ liệu đầu vào, thực hiện một số phép tính cụ thể và tạo ra đầu ra. Các hàm có chức năng tái sử dụng mã nguồn của chương trình, chia chương trình phức tạp thành các nhóm nhỏ, tăng sự kết dính của các module.
 
 Trong Dart, hàm (function) được định nghĩa theo cú pháp:
-\begin{myverbatim}
-<kieu_tra_ve> tenHam(<danh_sach_tham_so>) {
-    // thân hàm
+\begin{lstlisting}
+<return_type> functionName(<list_arguments>) {
+    // body...
 }
-\end{myverbatim}
+\end{lstlisting}
 
 Trong đó, \texttt{<kieu\_tra\_ve>} có thể là một kiểu dữ liệu cụ thể(ví dụ như \texttt{int}, \texttt{String}), hoặc \texttt{void} nếu hàm không trả về giá trị. Nếu không ghi rõ kiểu trả về, Dart mặc định dùng \texttt{dynamic}.
 

@@ -33,16 +33,9 @@ Dart, một ngôn ngữ lập trình đa năng do Google phát triển, đã chu
 
 \section{Giới thiệu về ngôn ngữ Dart}
 \subsection{Hoàn cảnh ra đời của ngôn ngữ lập trình Dart}
-<<<<<<< HEAD
 
 Dart là một ngôn ngữ lập trình được Google giới thiệu nhằm khắc phục những hạn chế của JavaScript trong việc xây dựng các ứng dụng web lớn, đặc biệt về hiệu suất và khả năng bảo trì. Để hiện thực hóa mục tiêu này, Google đã giao cho hai kỹ sư Lars Bak và Kasper Lund phát triển Dart, và ngôn ngữ này chính thức được công bố tại hội nghị GOTO ở Aarhus, Đan Mạch, vào ngày 10 tháng 10 năm 2011. Sự kiện ra mắt này đánh dấu bước tiến quan trọng trong việc cung cấp một công cụ lập trình hiện đại, dễ học và có hiệu suất cao. Đặc biệt, Dart được thiết kế để có thể biên dịch sang JavaScript, giúp đảm bảo tính tương thích với các trình duyệt web phổ biến, đồng thời hỗ trợ phát triển ứng dụng trên nhiều nền tảng khác nhau như web, di động và máy tính.
 
-=======
-\begin{itemize}
-    \item Dart được Google khởi xướng vào năm 2008 nhằm khắc phục những hạn chế của JavaScript - ngôn ngữ chiếm ưu thế trong lập trình web nhưng gặp vấn đề về hiệu suất và khả năng bảo trì cho các ứng dụng lớn. 
-    \item Dart được phát triển bởi các kỹ sư Lars Bak và Kasper Lund, Dart chính thức ra mắt vào ngày 10 tháng 10 năm 2011 tại hội nghị GOTO ở Aarhus, Đan Mạch. Ban đầu, nó được định vị là một ngôn ngữ hiện đại, dễ học, có hiệu suất cao và có thể biên dịch sang JavaScript để tương thích với trình duyệt.
-\end{itemize}
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \begin{figure}[H]
     \centering
@@ -65,7 +58,7 @@ Dart là một ngôn ngữ lập trình được Google giới thiệu nhằm kh
 
 \subsection{Lịch sử phát triển của ngôn ngữ lập trình Dart}
 
-Qua hơn một thập kỷ, Dart đã chuyển mình từ một ý tưởng đầy tham vọng thành một ngôn ngữ đa năng, hỗ trợ phát triển ứng dụng trên nhiều nền tảng như web, di động, máy tính để bàn và server.
+Qua hơn một thập kỷ, Dart đã chuyển mình từ một ý tưởng đầy tham vọng thành một ngôn ngữ đa năng, hỗ trợ phát triển ứng dụng trên nhiều nền tảng như web, di động, máy tính để bàn và server. Hành trình trở thành nền tảng phát triển ứng dụng di động hàng đầu của Flutter không dễ dàng mà phải trải qua nhiều tranh chấp pháp lý cũng như những bước tiến vượt bậc về công nghệ. Lịch sử phát triển của Dart có thể được tóm lược qua các giai đoạn chính sau:
 
 \subsubsection{Dart 1.0 (2011 - 2013)}
 Dart được công bố lần đầu vào ngày 10 tháng 10 năm 2011 tại hội nghị GOTO ở Aarhus, Đan Mạch. Mục tiêu của Dart là khắc phục các hạn chế của JavaScript, đặc biệt về hiệu suất, khả năng bảo trì mã nguồn, và trải nghiệm lập trình cho các ứng dụng web lớn. 
@@ -84,7 +77,6 @@ Dù được Google hỗ trợ mạnh mẽ, Dart gặp khó khăn trong việc c
 
 Tháng 8 năm 2018, Google chính thức giới thiệu \textbf{Dart 2.0}, đánh dấu một bước ngoặt quan trọng trong lịch sử phát triển của ngôn ngữ lập trình này. Phiên bản này không chỉ cải thiện hiệu suất mà còn mang đến những thay đổi nền tảng, giúp Dart trở nên mạnh mẽ và linh hoạt hơn.
 
-<<<<<<< HEAD
     
 \textbf{Dart~2.0} đánh dấu bước chuyển quan trọng từ hệ thống kiểu tùy chọn sang hệ thống kiểu tĩnh bắt buộc, củng cố nền tảng \textit{sound static typing} của ngôn ngữ. Bước chuyển này cho phép trình phân tích tĩnh phát hiện lỗi kiểu ngay trong quá trình biên dịch, thay vì đợi tới lúc chạy chương trình. Việc bắt lỗi sớm giúp lập trình viên viết mã an toàn hơn, đồng thời gia tăng độ tin cậy và khả năng dự đoán của ứng dụng, cải thiện hiệu suất và giảm chi phí gỡ lỗi nhờ loại bỏ nhiều lỗi kiểu xuất hiện ở \textit{runtime}. Hệ thống kiểu tĩnh mạnh mẽ cũng khiến \textit{Dart} thu hút những lập trình viên ưa thích \textit{type safety}, đặc biệt là những lập trình viên quen thuộc với ngôn ngữ lập trình \textit{Java} hoặc \textit{C\#} khi có thể tận dụng các công cụ quen thuộc mà vẫn hưởng lợi từ cú pháp gọn nhẹ của \textit{Dart}. Song song với tính nghiêm ngặt, \textit{Dart} vẫn giữ khả năng suy luận kiểu và cho phép dùng từ khóa \textit{dynamic} khi cần sự linh hoạt cao, qua đó cân bằng giữa an toàn và tiện dụng trong phát triển ứng dụng đa nền tảng.
 
@@ -97,13 +89,6 @@ Tháng 8 năm 2018, Google chính thức giới thiệu \textbf{Dart 2.0}, đán
 
 
     \textbf{Cải tiến hiệu suất nhờ biên dịch AOT và JIT:} 
-=======
-\begin{itemize}
-    \item \textbf{Hệ thống kiểu dữ liệu tĩnh mạnh mẽ (sound typing):}  \\[0.5em]
-    Dart 2.0 chuyển từ hệ thống kiểu dữ liệu tùy chọn sang kiểu dữ liệu tĩnh bắt buộc. Sự thay đổi này cho phép phát hiện lỗi kiểu dữ liệu ngay tại thời điểm biên dịch thay vì khi chạy chương trình (\textit{runtime}). Điều này giúp các nhà phát triển viết mã an toàn hơn, giảm thiểu lỗi không mong muốn và tăng tính dự đoán của chương trình. Với hệ thống kiểu dữ liệu tĩnh mạnh mẽ, Dart trở nên hấp dẫn hơn với những lập trình viên yêu thích sự an toàn kiểu, chẳng hạn như những người đã quen với Java hoặc C\#.
-
-    \item \textbf{Cải tiến hiệu suất nhờ biên dịch AOT và JIT:} 
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
     
     Dart 2.0 tận dụng hai phương thức biên dịch mạnh mẽ:
 
@@ -112,7 +97,6 @@ Tháng 8 năm 2018, Google chính thức giới thiệu \textbf{Dart 2.0}, đán
         \item \textbf{Just-in-Time (JIT):} Cho phép cập nhật mã nguồn ngay lập tức mà không cần biên dịch lại toàn bộ, hỗ trợ tính năng \textit{hot reload} – một công cụ quan trọng giúp tăng tốc quá trình phát triển ứng dụng.
     \end{itemize}
 
-<<<<<<< HEAD
     \textbf{Định hướng đa nền tảng:} 
     
  Trước đây, \textit{Dart} chủ yếu tập trung vào phát triển web như một lựa chọn thay thế cho \textit{JavaScript}. Sự tập trung đó đã được mở rộng với sự ra đời của \textit{Dart~2.0}, khi \textit{Google} hướng ngôn ngữ này tới cả nền tảng di động và máy tính để bàn. Tầm nhìn mới này đặt nền móng cho \textit{Flutter}, một \textit{framework} đa nền tảng sử dụng \textit{Dart} làm ngôn ngữ chính. Sự xuất hiện của \textit{Flutter} không chỉ mở rộng phạm vi ứng dụng mà còn tái định vị \textit{Dart~2.0} như một ngôn ngữ lập trình đa năng, sẵn sàng cạnh tranh trong nhiều lĩnh vực.
@@ -145,45 +129,15 @@ Năm 2018, \textit{Google} ra mắt \textit{Flutter}, một \textit{framework} g
 
 Nhờ \textit{Flutter}, \textit{Dart} từ một ngôn ngữ chủ yếu phục vụ lập trình web đã trở thành lựa chọn hàng đầu cho phát triển ứng dụng đa nền tảng. Sự phổ biến của \textit{Flutter} đã thúc đẩy mạnh mẽ việc áp dụng \textit{Dart}, thu hút hàng triệu nhà phát triển trên toàn cầu.
 
-=======
-    \item \textbf{Định hướng đa nền tảng:} 
-    
-    Nếu trước đây Dart chủ yếu tập trung vào phát triển web như một sự thay thế cho JavaScript, thì với Dart 2.0, Google đã mở rộng tầm nhìn của ngôn ngữ này sang các nền tảng khác như di động và máy tính để bàn. Sự thay đổi này đặt nền móng cho sự ra đời và phát triển của Flutter, một framework đa nền tảng sử dụng Dart làm ngôn ngữ chính.
-\end{itemize}
-
-Sự xuất hiện của Dart 2.0 không chỉ cải thiện chất lượng mã nguồn mà còn tái định vị Dart như một ngôn ngữ lập trình đa năng, sẵn sàng cạnh tranh trong nhiều lĩnh vực ứng dụng.
-
-\subsubsection{Sự bùng nổ: Flutter và Dart (2018 - nay)}
-
-Cũng trong năm 2018, Google ra mắt Flutter, một framework giao diện người dùng (UI) mã nguồn mở cho phép phát triển các ứng dụng native cho di động, web và máy tính để bàn từ một mã nguồn duy nhất. Flutter chọn Dart làm ngôn ngữ lập trình chính, tận dụng những ưu điểm nổi bật của Dart để tạo nên một công cụ phát triển mạnh mẽ và hiệu quả.
-
-\begin{itemize}
-    \item \textbf{Tốc độ phát triển ứng dụng nhanh chóng với hot reload)} \\[0.5em]
-    Một trong những điểm mạnh lớn nhất của Flutter là tính năng \textbf{hot reload}, được hỗ trợ bởi biên dịch \textbf{JIT} của Dart. Hot reload cho phép các nhà phát triển thấy ngay kết quả của thay đổi mã nguồn mà không cần khởi động lại ứng dụng, giúp tiết kiệm thời gian và tăng năng suất, đặc biệt trong việc thiết kế và tinh chỉnh giao diện người dùng.
-    \item \textbf{Biên dịch native code hiệu quả (AOT, JIT)} \\[0.5em]
-    Flutter sử dụng biên dịch \textbf{AOT} của Dart để tạo mã native cho các nền tảng như Android và iOS. Điều này đảm bảo ứng dụng đạt hiệu suất cao, mang lại trải nghiệm mượt mà tương đương với các ứng dụng được phát triển native truyền thống. Sự kết hợp này giúp Flutter cạnh tranh trực tiếp với các công nghệ như React Native hay Xamarin.
-    \item \textbf{Dễ dàng thiết kế giao diện người dùng linh hoạt.} \\[0.5em]
-    Với cú pháp rõ ràng và hệ thống widget phong phú của Flutter, Dart cho phép các nhà phát triển xây dựng giao diện người dùng phức tạp và đẹp mắt một cách dễ dàng. Việc sử dụng một ngôn ngữ duy nhất cho cả logic lập trình và giao diện giúp đơn giản hóa quy trình phát triển, đồng thời giảm thiểu sự phức tạp khi chuyển đổi giữa các ngôn ngữ khác nhau.
-\end{itemize}
-
-Từ một ngôn ngữ chủ yếu phục vụ lập trình web, Dart giờ đây trở thành lựa chọn hàng đầu cho phát triển ứng dụng đa nền tảng. Sự phổ biến của Flutter đã thúc đẩy mạnh mẽ việc áp dụng Dart, thu hút hàng triệu nhà phát triển trên toàn cầu.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \subsubsection{Dart 2.12: Null Safety (2021)}
 
 Vào tháng 2 năm 2021, \textbf{Dart 2.12} được phát hành, mang đến một trong những tính năng quan trọng nhất trong lịch sử của Dart: \textbf{Null Safety}. Đây là một bước tiến lớn nhằm nâng cao độ an toàn và tin cậy của mã nguồn.
 
-<<<<<<< HEAD
 \textit{Null Safety} giúp loại bỏ lỗi \textit{null references}. Tính năng này cho phép lập trình viên chỉ định rõ ràng ngay từ lúc thiết kế liệu một biến có thể nhận giá trị \textit{null} hay không. Sự chỉ định rõ ràng đó ngăn chặn lỗi \textit{null pointer exceptions} – một vấn đề phổ biến và khó chịu trong lập trình. Nhờ phát hiện và xử lý các trường hợp \textit{null} tại thời điểm biên dịch, \textit{Null Safety} nâng cao chất lượng mã, giảm thiểu lỗi \textit{runtime} và cải thiện hiệu suất ứng dụng.
 
 
 Phiên bản mới này này nhận được sự hoan nghênh nhiệt liệt từ cộng đồng lập trình Dart. \textit{Null Safety} không chỉ giúp mã nguồn trở nên đáng tin cậy hơn mà còn khuyến khích các nhà phát triển viết mã sạch hơn, dễ bảo trì hơn. Đây cũng là minh chứng cho sự trưởng thành của Dart như một ngôn ngữ lập trình hiện đại, đáp ứng các tiêu chuẩn an toàn mã nguồn ngày càng cao.
-=======
-    \textbf{Loại bỏ lỗi null reference: } 
-    Null Safety cho phép các nhà phát triển chỉ định rõ ràng liệu một biến có thể nhận giá trị null hay không ngay từ khi thiết kế. Điều này giúp ngăn chặn các lỗi \textbf{null pointer exceptions} – một vấn đề phổ biến và khó chịu trong lập trình. Bằng cách phát hiện và xử lý các trường hợp null tại thời điểm biên dịch, Null Safety cải thiện đáng kể chất lượng mã, giảm thiểu lỗi runtime và tăng cường hiệu suất ứng dụng.
-
-Tính năng này nhận được sự hoan nghênh nhiệt liệt từ cộng đồng lập trình Dart. Null Safety không chỉ giúp mã nguồn trở nên đáng tin cậy hơn mà còn khuyến khích các nhà phát triển viết mã sạch hơn, dễ bảo trì hơn. Đây cũng là minh chứng cho sự trưởng thành của Dart như một ngôn ngữ lập trình hiện đại, đáp ứng các tiêu chuẩn an toàn mã nguồn ngày càng cao.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \subsubsection{Dart 3.x (2023 - 2025)}
 Dart tiếp tục phát triển mạnh mẽ với các phiên bản mới, mang đến những tính năng tiên tiến để đáp ứng nhu cầu của các nhà phát triển trong bối cảnh công nghệ không ngừng thay đổi.
@@ -205,9 +159,8 @@ Dart tiếp tục phát triển mạnh mẽ với các phiên bản mới, mang 
 \end{itemize}
 
 \subsection{Ứng dụng thực tiễn của Dart}
-<<<<<<< HEAD
 
-Dart ngày càng được ứng dụng rộng rãi vượt ra ngoài phạm vi web và di động, nhờ khả năng thích ứng linh hoạt trên nhiều nền tảng. Khả năng linh hoạt này được thể hiện rõ trong phát triển backend, khi các thư viện như Dart Frog cung cấp giải pháp hiệu quả cho việc xây dựng server-side. Hiệu quả tương tự cũng được khẳng định ở nền tảng web, với Flutter Web và AngularDart hỗ trợ lập trình viên xây dựng ứng dụng giàu tính tương tác từ một cơ sở mã duy nhất. Lợi ích của cơ sở mã duy nhất còn giúp Dart dễ dàng triển khai ứng dụng máy tính để bàn bằng cách biên dịch native trực tiếp cho Windows, macOS và Linux. Không dừng lại ở đó, tính nhỏ gọn và hiệu quả trong biên dịch native còn giúp Dart trở thành lựa chọn lý tưởng cho phát triển các hệ thống IoT và dự án Fuchsia OS.
+Dart ngày càng được ứng dụng rộng rãi, mở rộng ra ngoài phạm vi web và di động, nhờ khả năng thích ứng linh hoạt trên nhiều nền tảng. Khả năng linh hoạt này được thể hiện rõ trong phát triển backend, khi các thư viện như Dart Frog cung cấp giải pháp hiệu quả cho việc xây dựng server-side. Hiệu quả tương tự cũng được khẳng định ở nền tảng web, với Flutter Web và AngularDart hỗ trợ lập trình viên xây dựng ứng dụng giàu tính tương tác từ một cơ sở mã duy nhất. Lợi ích của cơ sở mã duy nhất còn giúp Dart dễ dàng triển khai ứng dụng máy tính để bàn bằng cách biên dịch native trực tiếp cho Windows, macOS và Linux. Không dừng lại ở đó, tính nhỏ gọn và hiệu quả trong biên dịch native còn giúp Dart trở thành lựa chọn lý tưởng cho phát triển các hệ thống IoT và dự án Fuchsia OS.
 
 Sự đa dạng về ứng dụng và tính linh hoạt của Dart được tăng cường hơn nữa nhờ hệ sinh thái Flutter, cho phép lập trình viên phát triển ứng dụng đa nền tảng chất lượng cao chỉ từ một mã nguồn duy nhất, đồng thời hưởng lợi từ quy trình phát triển nhanh và trải nghiệm tinh chỉnh trực quan.
 
@@ -229,33 +182,6 @@ Hệ sinh thái Dart không ngừng mở rộng, thể hiện ở các hội ngh
 
 Dart 2.0 giới thiệu hệ thống kiểu tĩnh mạnh mẽ; nền tảng kiểu an toàn này đã mở đường cho sự bùng nổ của Flutter. Sự bùng nổ đó, cùng với \textit{Null Safety} được bổ sung trong Dart 2.12, đã dẫn Dart tiến nhanh tới chuỗi phiên bản 3.x (3.0, 3.4, 3.7) với nhiều cải tiến đáng kể. Quá trình nâng cấp liên tục ấy biến Dart thành một ngôn ngữ đa năng và vững mạnh. Nhờ vậy, theo thống kê năm 2023, Dart đã vươn lên vị trí Top 16 ngôn ngữ lập trình được sử dụng nhiều nhất, khẳng định chỗ đứng vững chắc trong cộng đồng phát triển.
 
-=======
-Ngoài phát triển web và di động, Dart ngày càng được ứng dụng trong nhiều lĩnh vực khác:
-
-\begin{itemize}
-    \item \textbf{Lập trình phía server}: Với các thư viện như \textbf{Dart Frog}, Dart trở thành lựa chọn hiệu quả cho phát triển backend.
-    \item \textbf{Phát triển web}: Flutter Web, AngularDart.
-    \item \textbf{Phát triển máy tính để bàn}: Dart tương thích với nhiều hệ điều hành Windows, macOS, Linux.
-    \item \textbf{Phát triển hệ thống IoT và Fuchsia OS}: Dart được sử dụng trong các dự án IoT nhờ khả năng biên dịch hiệu quả và tính linh hoạt.
-\end{itemize}
-
-Các ứng dụng Flutter được viết bằng Dart cho phép cung cấp trải nghiệm tốt nhất cho nhà phát triển giúp tạo ra các ứng dụng di động chất lượng cao.
-
-\subsection{Cộng đồng và hệ sinh thái}
-Dart hiện sở hữu một cộng đồng phát triển năng động và ngày càng mở rộng. Hệ sinh thái Dart bao gồm hàng loạt thư viện, gói (packages) và công cụ hỗ trợ đa dạng, từ phát triển ứng dụng di động với Flutter đến lập trình web và server. Sự hỗ trợ mạnh mẽ từ Google cùng với đóng góp từ cộng đồng đã giúp Dart duy trì vị thế là một ngôn ngữ lập trình quan trọng trong thế giới phần mềm hiện đại.
-
-Bên cạnh đó, Dart có một cộng đồng phát triển mạnh mẽ với:
-
-\begin{itemize}
-    \item Các hội nghị lớn như Flutter Engage, Flutter Forward.
-    \item Thư viện DartPad cho phép viết và chạy code Dart trực tiếp trên trình duyệt.
-    \item Kho package \texttt{pub.dev} với hàng chục nghìn thư viện mã nguồn mở.
-\end{itemize}
-
-Từ \textbf{Dart 2.0} với hệ thống kiểu dữ liệu tĩnh mạnh mẽ, đến sự bùng nổ của Flutter, rồi tính năng Null Safety trong \textbf{Dart 2.12} và các cải tiến trong những phiên bản mới như \textbf{Dart 3.0, 3.4 và 3.7}, Dart đã không ngừng phát triển để trở thành một ngôn ngữ lập trình đa năng và mạnh mẽ.
-
-Ngày nay, Dart đã trở thành một trong những ngôn ngữ lập trình phổ biến nhất, được cộng đồng lập trình viên tin tưởng sử dụng. Theo số liệu thống kê năm 2023, Dart lọt Top 16 ngôn ngữ lập trình được sử dụng nhiều nhất.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \begin{figure}[H]
     \centering
@@ -267,17 +193,12 @@ Ngày nay, Dart đã trở thành một trong những ngôn ngữ lập trình p
 Với vai trò mở rộng trong nhiều lĩnh vực và sự hỗ trợ từ cộng đồng, Dart hứa hẹn sẽ tiếp tục là một công cụ không thể thiếu cho các nhà phát triển trong tương lai.
 
 \section{Đặc điểm của ngôn ngữ lập trình Dart}
-<<<<<<< HEAD
 
 \textbf{Dart} là một ngôn ngữ lập trình hiện đại. Ngôn ngữ này chứng tỏ vị thế nổi bật trong phát triển ứng dụng đa nền tảng nhờ khả năng tích hợp chặt chẽ với \emph{Flutter} – framework giao diện người dùng (UI) do Google phát triển. Sự tích hợp đó cho phép \textbf{Dart} tạo ra giao diện mượt mà và hiệu năng cao trên thiết bị di động, trình duyệt web và máy tính để bàn. Ngoài ưu thế tích hợp, cú pháp gần gũi với C, Java và JavaScript giúp lập trình viên đã quen các ngôn ngữ này nhanh chóng nắm bắt cú pháp \textbf{Dart}.
-=======
-Dart là một ngôn ngữ lập trình hiện đại, thể hiện vị trí nổi bật của mình trong phát triển ứng dụng đa nền tảng, đặc biệt nhờ tích hợp với Flutter, một framework giao diện người dùng (UI) của Google. Với cú pháp tương tự C, Java, và JavaScript, Dart dễ học đối với các lập trình viên đã quen thuộc với các ngôn ngữ này. Dart được tối ưu hóa để xây dựng ứng dụng hiệu suất cao trên nhiều nền tảng, đồng thời mang lại trải nghiệm phát triển mượt mà và nhanh chóng.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{Hinhve/dartFeatures.jpg}
-<<<<<<< HEAD
     \caption{Các đặc điểm chính của ngôn ngữ lập trình Dart}
     \label{fig:dartimg}
 \end{figure}
@@ -289,17 +210,6 @@ Khả năng thích ứng đa nền tảng tiếp tục được củng cố bở
 Dart hỗ trợ lập trình bất đồng bộ thông qua các từ khóa \texttt{async} và \texttt{await}, cho phép xử lý các tác vụ không đồng bộ như gọi API, tải dữ liệu, hoặc xử lý sự kiện mà không làm gián đoạn giao diện người dùng. Tính năng này rất quan trọng khi phát triển ứng dụng đa nền tảng, vì nó giúp xây dựng các giao diện động và phản hồi nhanh.Tính năng này giúp Dart trở thành lựa chọn lý tưởng cho các ứng dụng đòi hỏi hiệu suất cao và giao diện mượt mà.
 
 Ví dụ, một hàm bất đồng bộ trong Dart có thể được viết như sau:
-=======
-    \caption{Các đặc điểm của ngôn ngữ lập trình Dart}
-    \label{fig:dartimg}
-\end{figure}
-
-Dart là ngôn ngữ lập trình hiện đại được thiết kế để xây dựng ứng dụng đa nền tảng với hiệu suất cao và trải nghiệm phát triển mượt mà. Những đặc điểm nổi bật dưới đây đã giúp Dart trở thành một lựa chọn lý tưởng cho các nhà phát triển ứng dụng:
-
-\begin{itemize}
-\item \textbf{Lập trình bất đồng bộ (Asynchronous Programming):} 
-Dart hỗ trợ lập trình bất đồng bộ thông qua các từ khóa \texttt{async} và \texttt{await}, cho phép xử lý các tác vụ không đồng bộ như gọi API, tải dữ liệu, hoặc xử lý sự kiện mà không làm gián đoạn giao diện người dùng. Tính năng này rất quan trọng khi phát triển ứng dụng Flutter, vì nó giúp xây dựng các giao diện động và phản hồi nhanh. Ví dụ, một hàm bất đồng bộ trong Dart có thể được viết như sau:
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
     
 \begin{lstlisting}
 Future<String> fetchData() async {
@@ -308,17 +218,10 @@ Future<String> fetchData() async {
 }
 \end{lstlisting}
     
-<<<<<<< HEAD
 
 
 \item \textbf{Hot Reload:} 
 Hot Reload là một trong những tính năng nổi bật nhất khi Dart kết hợp với Flutter, mang lại các tiện ích như :
-=======
-Tính năng này giúp Dart trở thành lựa chọn lý tưởng cho các ứng dụng đòi hỏi hiệu suất cao và giao diện mượt mà.
-
-\item \textbf{Hot Reload:} 
-Hot Reload là một trong những tính năng nổi bật nhất khi Dart kết hợp với Flutter, mang lại:
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \begin{itemize}
     \item \textbf{Thay đổi mã nguồn ngay lập tức:} Cho phép lập trình viên thay đổi code và xem ngay kết quả trên giao diện mà không cần khởi động lại toàn bộ ứng dụng.
@@ -327,7 +230,6 @@ Hot Reload là một trong những tính năng nổi bật nhất khi Dart kết
     \item \textbf{Ổn định bộ nhớ:} Hạn chế hiện tượng rò rỉ bộ nhớ vốn dễ gặp trong các ngôn ngữ cần build lại toàn bộ như C/C++.
 \end{itemize}
 
-<<<<<<< HEAD
 
 \item \textbf{Mã nguồn mở (Open Source):} Dart được phát hành dưới giấy phép BSD-style, nhờ đó cộng đồng lập trình viên toàn cầu có thể trực tiếp tham gia phát triển, báo lỗi và đề xuất cải tiến. Sự tham gia rộng rãi ấy đã hình thành kho thư viện phong phú trên \texttt{pub.dev} với hàng chục nghìn package mã nguồn mở, mở rộng khả năng của Dart trong hầu hết các lĩnh vực. Kho thư viện không ngừng lớn mạnh tiếp tục thúc đẩy nhu cầu về tư liệu học tập; tài liệu chính thức tại \texttt{dart.dev} và \texttt{flutter.dev} vì thế luôn được cập nhật thường xuyên, hỗ trợ đồng thời người mới bắt đầu và lập trình viên chuyên nghiệp. Việc tài liệu và thư viện phát triển liên tục góp phần mở rộng hệ sinh thái dựa trên Dart: từ Flutter và AngularDart đến các giải pháp server-side như Shelf hay Dart Frog. Môi trường mã nguồn mở toàn diện như vậy đã thúc đẩy sự phát triển nhanh chóng và bền vững của Dart kể từ khi ra đời.
 
@@ -338,21 +240,6 @@ Hot Reload là một trong những tính năng nổi bật nhất khi Dart kết
 
 
 
-=======
-Hot Reload đã trở thành một công cụ không thể thiếu, giúp Dart + Flutter vượt trội về tốc độ phát triển so với nhiều công nghệ truyền thống.
-
-\item \textbf{Mã nguồn mở (Open Source):} 
-Dart là một ngôn ngữ mã nguồn mở, được phát hành dưới giấy phép BSD-style license:
-
-\begin{itemize}
-    \item \textbf{Cộng đồng đóng góp rộng rãi:} Lập trình viên trên toàn thế giới có thể tham gia vào quá trình phát triển, báo lỗi, đề xuất cải tiến cho Dart.
-    \item \textbf{Kho thư viện phong phú:} Hệ sinh thái \texttt{pub.dev} chứa hàng chục nghìn package mã nguồn mở, giúp mở rộng khả năng của Dart trong mọi lĩnh vực.
-    \item \textbf{Tài liệu chính thức phong phú:} Tài liệu từ dart.dev và flutter.dev luôn được cập nhật thường xuyên, tạo điều kiện thuận lợi cho người mới học và nhà phát triển chuyên nghiệp.
-    \item \textbf{Hệ sinh thái đa dạng:} Hỗ trợ nhiều dự án lớn như Flutter, AngularDart, server-side Dart (Shelf, Dart Frog).
-\end{itemize}
-
-Môi trường mã nguồn mở đã góp phần thúc đẩy sự phát triển nhanh chóng và bền vững cho Dart kể từ khi ra đời.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \vspace{0.5cm}
 
@@ -376,7 +263,6 @@ Dart sử dụng hệ thống kiểu dữ liệu tĩnh với thiết kế âm th
 Hệ thống kiểu của Dart mang lại sự cân bằng tuyệt vời giữa hiệu suất, độ an toàn và trải nghiệm lập trình linh hoạt.
 
     \item \textbf{Tính di động (Portability):} 
-<<<<<<< HEAD
 Dart được thiết kế để trở thành ngôn ngữ \textbf{"write once, run anywhere"}, cho phép biên dịch mã nguồn sang nhiều nền tảng khác nhau mà không cần thay đổi logic chính.
 \begin{itemize}
 \item \textbf{Native code (AOT):} Cơ chế \textit{ahead-of-time compilation} của Dart biên dịch trực tiếp mã nguồn sang mã máy ARM hoặc~x86. Cấu trúc biên dịch ấy cho phép tạo các gói cài đặt \textit{APK}, \textit{IPA} hay tệp \textit{EXE} cho ứng dụng Flutter trên di động và máy tính để bàn, đồng thời bảo đảm hiệu suất native và thời gian khởi chạy nhanh.
@@ -388,59 +274,14 @@ Dart được thiết kế để trở thành ngôn ngữ \textbf{"write once, r
 \item \textbf{Server-side và file thực thi độc lập:} Trong giai đoạn phát triển, mã Dart có thể chạy trực tiếp trên \textit{Dart VM}; khi triển khai, cùng một mã nguồn ấy được biên dịch thành tệp thực thi độc lập cho môi trường sản xuất. Ví dụ tiêu biểu là hạ tầng Google Fiber đã dùng Dart ở server-side để xử lý khoảng 10 000 yêu cầu mỗi giây.
 
 \item \textbf{Casestudy đa nền tảng:} Ứng dụng Google Ads minh họa rõ ràng tính “write once, run anywhere”: một codebase Dart duy nhất phục vụ đồng thời năm nền tảng—Android, iOS, web, Windows và macOS—giúp rút ngắn ước tính 70 \% thời gian phát triển so với duy trì năm dự án riêng rẽ.
-=======
-Dart được thiết kế để trở thành ngôn ngữ "write once, run anywhere", cho phép biên dịch mã nguồn sang nhiều nền tảng khác nhau mà không cần thay đổi logic chính.
-\begin{itemize}
-    \item \textbf{Native Code (AOT):} 
-    \begin{itemize}
-        \item Biên dịch sang mã máy (ARM/x86) thông qua AOT compilation
-        \item Ứng dụng: Flutter mobile/desktop apps (APK/IPA/EXE)
-        \item Ưu điểm: Hiệu suất native, khởi động nhanh
-    \end{itemize}
-    
-    \item \textbf{JavaScript (dart2js):}
-    \begin{itemize}
-        \item Chuyển đổi Dart thành JS tối ưu cho trình duyệt
-        \item Hỗ trợ tree-shaking để giảm kích thước file
-        \item Hiệu suất cao hơn 20\% so với JS thông thường
-    \end{itemize}
-    
-    \item \textbf{WebAssembly (từ Dart 3.4):}
-    \begin{itemize}
-        \item Biên dịch sang Wasm qua WasmGC extension
-        \item Tăng 30-50\% hiệu suất web so với JS
-        \item Hiện hỗ trợ non-Flutter web apps
-    \end{itemize}
-    
-    \item \textbf{Server-side \& Executable:}
-    \begin{itemize}
-        \item Chạy trực tiếp trên Dart VM (development)
-        \item Biên dịch thành standalone executable (production)
-        \item Case study: Google Fiber backend xử lý 10K request/giây
-    \end{itemize}
-    
-    \item \textbf{Case Study đa nền tảng:}
-    \begin{itemize}
-        \item Ứng dụng Google Ads: 1 codebase cho 5 nền tảng
-        \item Mobile (Android/iOS), Web, Desktop (Windows/macOS)
-        \item Tiết kiệm 70\% thời gian phát triển
-    \end{itemize}
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 \end{itemize}
 
     \item \textbf{Công cụ hỗ trợ mạnh mẽ (Productive Tooling):} 
     Dart đi kèm với các công cụ phát triển mạnh mẽ, bao gồm DartPad (một trình biên tập trực tuyến cho phép viết và chạy mã Dart mà không cần cài đặt), và tích hợp tốt với các IDE như Visual Studio Code, IntelliJ IDEA, và Android Studio. Các công cụ này cung cấp tính năng gợi ý mã, kiểm tra lỗi thời gian thực, và gỡ lỗi, giúp tăng năng suất lập trình. Ngoài ra, Dart còn có hệ thống quản lý gói (package manager) gọi là \texttt{pub}, giúp dễ dàng quản lý và tích hợp các thư viện bên ngoài.
 
     \item \textbf{Thu gom rác (Garbage Collection):} 
-<<<<<<< HEAD
         Dart có hệ thống quản lý bộ nhớ tự động thông qua thu gom rác, giúp giảm thiểu lỗi liên quan đến bộ nhớ như rò rỉ bộ nhớ (memory leak). Hệ thống này tự động giải phóng bộ nhớ không còn sử dụng, đảm bảo hiệu suất ổn định cho ứng dụng, đặc biệt là các ứng dụng lớn và phức tạp.
         Theo bài kiểm tra của Google, Dart GC giảm 50\% thời gian tạm dừng so với JavaScript V8 trong các ứng dụng phức tạp.
-=======
-    \begin{itemize}
-        \item Dart có hệ thống quản lý bộ nhớ tự động thông qua thu gom rác, giúp giảm thiểu lỗi liên quan đến bộ nhớ như rò rỉ bộ nhớ (memory leak). Hệ thống này tự động giải phóng bộ nhớ không còn sử dụng, đảm bảo hiệu suất ổn định cho ứng dụng, đặc biệt là các ứng dụng lớn và phức tạp.
-        \item Theo bài kiểm tra của Google, Dart GC giảm 50\% thời gian tạm dừng so với JavaScript V8 trong các ứng dụng phức tạp.
-    \end{itemize}
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
     \item \textbf{Nền tảng cho Flutter:} 
     Dart là ngôn ngữ chính thức của Flutter, một framework của Google để xây dựng ứng dụng giao diện người dùng đa nền tảng. Sự kết hợp giữa Dart và Flutter mang lại hiệu suất cao nhờ biên dịch AOT, cùng với khả năng tạo giao diện đẹp mắt và đồng nhất trên các nền tảng. Tính năng Hot Reload và lập trình bất đồng bộ của Dart đặc biệt hữu ích trong Flutter, giúp lập trình viên phát triển ứng dụng nhanh chóng và hiệu quả.
@@ -448,7 +289,6 @@ Dart được thiết kế để trở thành ngôn ngữ "write once, run anywh
     \item \textbf{Hỗ trợ lập trình hướng đối tượng (Object-Oriented Programming):} 
     Dart là một ngôn ngữ hướng đối tượng hoàn chỉnh, hỗ trợ các khái niệm như lớp, giao diện, mixin, và lớp trừu tượng. Điều này cho phép lập trình viên xây dựng các ứng dụng có cấu trúc rõ ràng và dễ bảo trì.
 \end{itemize}
-<<<<<<< HEAD
 Lựa chọn ngôn ngữ lập trình phù hợp là yếu tố then chốt bảo đảm hiệu suất và khả năng mở rộng của ứng dụng. Sự lựa chọn này thường được cân nhắc giữa hai ngôn ngữ phổ biến là Dart và JavaScript, mỗi ngôn ngữ sở hữu những đặc điểm riêng. Các đặc điểm ấy sẽ được trình bày trong Bảng so sánh các tiêu chí giữa Dart và JavaScript như sau:
 
 
@@ -466,9 +306,6 @@ Lựa chọn ngôn ngữ lập trình phù hợp là yếu tố then chốt bả
 
 
 
-=======
-Việc lựa chọn ngôn ngữ lập trình phù hợp đóng vai trò quan trọng trong việc đảm bảo hiệu suất và khả năng mở rộng của ứng dụng. Hai ngôn ngữ Dart và JavaScript đều được sử dụng rộng rãi trong lĩnh vực này, nhưng mỗi ngôn ngữ có những đặc điểm riêng biệt. Nhìn chung thì Dart tương thích tốt hơn trong việc phát triển ứng dụng đa nền tảng. Dưới đây là bảng so sánh một số tiêu chí giữa Dart và JavaScript:
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 \begin{table}[H]
 \centering
 \begin{tabular}{|>{\centering\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{4.5cm}|}
@@ -487,11 +324,7 @@ Hiệu suất & Native tốc độ cao với AOT, nhanh hơn trong mobile apps &
 
 \section{Các nền tảng thực thi của Dart}
 
-<<<<<<< HEAD
 Dart hỗ trợ hai nền tảng chính cho việc phát triển ứng dụng: \textbf{Dart Native} và \textbf{Dart Web}. Như được minh họa trong \textit{Hình \ref{fig:dart_platforms}}, mỗi nền tảng có các đặc điểm và mục đích sử dụng riêng biệt, cho phép các nhà phát triển xây dựng ứng dụng đa nền tảng một cách hiệu quả.
-=======
-Dart hỗ trợ hai nền tảng chính cho việc phát triển ứng dụng: \textbf{Dart Native} và \textbf{Dart Web}. Như được minh họa trong Hình \ref{fig:dart_platforms}, mỗi nền tảng có các đặc điểm và mục đích sử dụng riêng biệt, cho phép các nhà phát triển xây dựng ứng dụng đa nền tảng một cách hiệu quả.
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \begin{figure}[H]
     \centering
@@ -502,26 +335,15 @@ Dart hỗ trợ hai nền tảng chính cho việc phát triển ứng dụng: \
 
 \subsection{Dart Native}
 
-Dart Native được thiết kế để phát triển ứng dụng di động và máy tính để bàn. Nó cho phép biên dịch mã Dart thành mã máy bản xứ, đảm bảo hiệu suất cao trên các nền tảng như Android, iOS, Windows, macOS, và Linux. Dart Native hỗ trợ các kiến trúc phần cứng như ARM32, ARM64 (cho thiết bị di động) và $x86_64$ (cho máy tính để bàn).
+Dart Native được thiết kế để phát triển ứng dụng di động và máy tính để bàn. Nó cho phép biên dịch mã Dart thành mã máy bản xứ, đảm bảo hiệu suất cao trên các nền tảng như Android, iOS, Windows, macOS, và Linux. Dart Native hỗ trợ các kiến trúc phần cứng như ARM32, ARM64 (cho thiết bị di động) và x86\_64 (cho máy tính để bàn).
 
 Trong quá trình phát triển, Dart Native cung cấp:
 \begin{itemize}
     \item \textbf{Biên dịch tăng cường nhanh chóng}: Giúp lập trình viên thấy ngay kết quả thay đổi mã mà không cần khởi động lại ứng dụng.
-<<<<<<< HEAD
     \item \textbf{Hot reload}: Cho phép cập nhật mã nguồn trong thời gian thực, giữ nguyên trạng thái ứng dụng, rất hữu ích cho thiết kế giao diện.
 \end{itemize}
 
 
-=======
-    \item \textbf{Nạp lại nóng có trạng thái}: Cho phép cập nhật mã nguồn trong thời gian thực, giữ nguyên trạng thái ứng dụng, rất hữu ích cho thiết kế giao diện.
-\end{itemize}
-
-Trong sản xuất, Dart Native mang lại:
-\begin{itemize}
-    \item \textbf{Đầu ra native nhanh nhất}: Ứng dụng chạy mượt mà, tương đương ứng dụng native truyền thống.
-    \item \textbf{Runtime nhỏ nhất}: Giảm kích thước ứng dụng, tối ưu cho phân phối.
-\end{itemize}
->>>>>>> e99cf771c83e18ae8ecc6bb8d6dc5eff79ee4fb1
 
 \subsection{Dart Web}
 
